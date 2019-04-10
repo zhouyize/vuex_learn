@@ -2,7 +2,7 @@
     <!--只能存在一个根容器-->
     <div class="a">
         Page a -- {{ $store.state.a.money}}
-        <button type="button" @click="add">增加</button>
+        <button type="button" @click="add(2)">增加</button>
         <button type="button" @click="reduce">删减</button>
     </div>
 </template>
