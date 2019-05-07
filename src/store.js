@@ -7,7 +7,7 @@ const state = {
     count:1
 }
 
-const mutations = {
+const mutations = {         //对state做操作，state的修改只能在这里
     increment(state){
         state.count++
     },

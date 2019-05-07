@@ -1,7 +1,7 @@
 <template>
     <!--只能存在一个根容器-->
     <div class="">
-        Vuex {{ count}}
+        Vuex {{ count}}{{$store.state.count}}
         <button type="button" @click="increment">增加</button>
         <button type="button" @click="decrement">删减</button>
     </div>
@@ -14,26 +14,13 @@
         name: '',
         //props: ["",""],
         props: {
-            //nick:{
-            //type:String,
-            //default:'国民老公'
-            //},
-
-
-            // 对象或数组默认值必须从一个工厂函数获取
-            //girlFriends:{
-            //type:Array,
-            //default:function(){
-            //return ['g1','g2']
-            //}
-            //}
         },
 
         //所有的初始化状态全部放入data中
         data() {
             return {}
         },
-        methods: mapActions([
+        methods: mapActions([       //预定义的做关联
             'increment',
             'decrement'
         ]),
